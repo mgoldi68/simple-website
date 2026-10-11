@@ -88,10 +88,16 @@ th {
   background: #eef2ff;
 }
 
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
 .action-cell {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .edit-btn {
