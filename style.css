@@ -61,7 +61,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 12px;
-  table-layout: fixed;
 }
 
 th, td {
@@ -69,34 +68,36 @@ th, td {
   padding: 14px 12px;
   text-align: left;
   vertical-align: top;
-  word-wrap: break-word;
 }
 
 th:nth-child(1) {
-  width: 18%;
+  width: 140px;
+  flex-shrink: 0;
 }
 
 th:nth-child(2) {
-  width: 52%;
+  flex-grow: 1;
 }
 
 th:nth-child(3) {
-  width: 30%;
+  width: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-align: right;
 }
 
 th {
   background: #eef2ff;
 }
 
-th:last-child,
 td:last-child {
   text-align: right;
+  white-space: nowrap;
 }
 
 .action-cell {
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
